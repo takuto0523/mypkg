@@ -9,10 +9,16 @@ $ git clone git@github.com:takuto0523/mypkg.git
 ``` 
 
 ## 実行方法
-* ubuntuを二つ立ち上げ、ros2_wsディレクトリに移動して以下のコマンドを入力してください。
+* talkerとlistenerを別々に立ち上げる方法
+  * ubuntuを二つ立ち上げ、ros2_wsディレクトリに移動して以下のコマンドを入力してください。
 ```
 端末1$ ros2 run mypkg talker
 端末2$ ros2 run mypkg listener
+```
+* launchファイルを使って、talkerとlistenerを同時に立ち上げる方法
+  * ros2_wsディレクトリに移動して以下のコマンドを入力してください。
+```
+$ ros2 launch mypkg talk_listen.launch.py
 ```
 
 ## 実行結果
@@ -43,6 +49,7 @@ $ git clone git@github.com:takuto0523/mypkg.git
 
 ## テスト環境
 * Ubuntu 22.04.2 LST
+* Ros2 Foxy
 
 ## 著作権・ライセンス
 * このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
