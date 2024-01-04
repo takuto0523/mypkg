@@ -1,7 +1,7 @@
 # mypkg
 ros2用のリポジトリ
 
-![test](https://github.com/takuto0523/mypkg/blob/01d3784359804aff350cf3690c11e3bc9c37df4c/.github/workflows/test.yml)
+![test](https://github.com/takuto0523/mypkg/blob/01d3784359804aff350cf3690c11e3bc9c37df4c/.github/workflows/test.yml/badge.svg)
 
 ## 機能
 数字をカウントしてトピック/countupを通じて送信します。
