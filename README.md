@@ -1,6 +1,8 @@
 # mypkg
 ros2用のリポジトリ
 
+![test](https://github.com/takuto0523/mypkg/blob/01d3784359804aff350cf3690c11e3bc9c37df4c/.github/workflows/test.yml)
+
 ## 機能
 数字をカウントしてトピック/countupを通じて送信します。
 2つのノード間でトピック通信を行います。
