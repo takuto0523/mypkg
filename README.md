@@ -16,6 +16,7 @@ $ git clone git@github.com:takuto0523/mypkg.git
 ```
 
 ## 実行結果
+* talkerとlistenerを別々で実行した場合の結果
 ```
 [INFO] [1704292442.305173496] [listener]: Listen: 3
 [INFO] [1704292442.781006851] [listener]: Listen: 4
@@ -23,6 +24,17 @@ $ git clone git@github.com:takuto0523/mypkg.git
 [INFO] [1704292443.781585161] [listener]: Listen: 6
 [INFO] [1704292444.281131184] [listener]: Listen: 7
 [INFO] [1704292444.782535929] [listener]: Listen: 8
+...
+```
+* launchファイルを使った場合の結果
+```
+[listener-2] [INFO] [1704388200.358093534] [listener]: Listen: 0
+[listener-2] [INFO] [1704388200.850681227] [listener]: Listen: 1
+[listener-2] [INFO] [1704388201.350803707] [listener]: Listen: 2
+[listener-2] [INFO] [1704388201.850911960] [listener]: Listen: 3
+[listener-2] [INFO] [1704388202.350392181] [listener]: Listen: 4
+[listener-2] [INFO] [1704388202.850845868] [listener]: Listen: 5
+...
 ```
 
 ## 必要なソフトウェア
