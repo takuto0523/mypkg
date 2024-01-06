@@ -1,10 +1,10 @@
 # mypkg
-ros2用のリポジトリ
+ros2で動くパッケージです。
 
 [![test](https://github.com/takuto0523/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/takuto0523/mypkg/actions/workflows/test.yml)
 
 ## 機能
-数字をカウントしてトピック/countupを通じて送信します。
+数字をカウントし、トピック/countupを通じて送信します。
 2つのノード間でトピック通信を行います。
 メッセージの型は16ビット符号つき整数
 
@@ -16,14 +16,9 @@ ros2用のリポジトリ
     * トピックを通じて受信したメッセージを表示します。
 
 * トピック/countup
-    * talkerからのメッセージをlistenerに送信します。
+    * ノード間でデータを送信すための仕組みです。
+    * ノードはトピックにデータを送信し、他のノードは同じトピックを受信して、データを受け取ります。
 
-## インストール方法
-* GitHubが利用できる環境で下記のコマンドを入力してください。
-
-```
-$ git clone git@github.com:takuto0523/mypkg.git
-``` 
 
 ## 実行方法
 * talkerとlistenerを別々に立ち上げる方法
@@ -63,10 +58,10 @@ $ ros2 launch mypkg talk_listen.launch.py
 ## 必要なソフトウェア
 * Python
   * テスト済み: 3.7～3.10
+  * Ros2 Foxy
 
 ## テスト環境
 * Ubuntu 22.04.2 LST
-* Ros2 Foxy
 
 ## 著作権・ライセンス
 * このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
